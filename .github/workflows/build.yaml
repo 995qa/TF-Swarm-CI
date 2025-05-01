@@ -20,12 +20,10 @@ jobs:
       # setup msbuild
       - name: Add msbuild to PATH
         uses: microsoft/setup-msbuild@v1.1
-        with:
-         vs-version: '(12.0)'
-
+        
       - name: Create project
         working-directory: src/devtools/bin
-        run: ./vpc.exe /tf +game /2013
+        run: ./vpc.exe /tf +game
 
       # client.dll
       - name: Build client_tf
