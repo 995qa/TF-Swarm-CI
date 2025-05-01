@@ -23,7 +23,7 @@ jobs:
 
       - name: Create project
         working-directory: src
-        run: createtfproject2013.bat
+        run: src/createtfproject2013.bat
 
       # client.dll
       - name: Build client_tf
